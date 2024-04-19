@@ -42,3 +42,10 @@ spec:
                 secretKeyRef:
                   name: app-secret
                   key: MONGO_INITDB_ROOT_PASSWORD
+          volumeMounts:
+            - name: mongodb-data
+              mountPath: /data/db
+      volumes:
+        - name: mongodb-data
+          persistentVolumeClaim:
+            claimName: mongodb-pvc
