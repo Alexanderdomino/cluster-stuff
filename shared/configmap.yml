@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: app-space
+data:
+  MONGODB_HOSTNAME: mongodb-service
+  MONGODB_DBNAME: admin
+  REL_URL_PATH: /myapp
