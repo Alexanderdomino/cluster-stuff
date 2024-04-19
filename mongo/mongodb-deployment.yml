@@ -26,12 +26,12 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: app-config
-                  key: mongodb_hostname
+                  key: MONGODB_HOSTNAME
             - name: MONGODB_DBNAME
               valueFrom:
                 configMapKeyRef:
                   name: app-config
-                  key: mongodb_dbname
+                  key: MONGODB_DBNAME
             - name: MONGO_INITDB_ROOT_USERNAME
               valueFrom:
                 secretKeyRef:
