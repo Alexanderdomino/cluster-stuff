@@ -6,11 +6,11 @@ metadata:
 spec:
   ingressClassName: "nginx"
   rules:
-    - host: "https://swwao.courses.orbit.au.dk/grp-9"
+    - host: "swwao.courses.orbit.au.dk"
       http:
         paths:
           - pathType: Prefix
-            path: "/myapp"
+            path: "/grp-9/myapp"
             backend:
               service:
                 name: node-app-service

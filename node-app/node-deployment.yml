@@ -16,6 +16,13 @@ spec:
       containers:
         - name: node-app
           image: registry.gitlab.au.dk/swwao/demo-projs/typescript-mongodb-crud
+          resources:
+            requests:
+              cpu: "100m" # 10% of a CPU core
+              memory: "256Mi" # 256 Mebibytes
+            limits:
+              cpu: "500m" # 50% of a CPU core
+              memory: "1Gi" # 1 Gibibyte
           env:
             - name: MONGODB_USERNAME
               valueFrom:
