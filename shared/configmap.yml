@@ -6,4 +6,4 @@ metadata:
 data:
   MONGODB_HOSTNAME: mongodb-service
   MONGODB_DBNAME: admin
-  REL_URL_PATH: /myapp
+  REL_URL_PATH: /grp-9/myapp
